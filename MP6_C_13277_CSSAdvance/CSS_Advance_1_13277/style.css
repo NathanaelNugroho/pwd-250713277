@@ -1,0 +1,50 @@
+body {
+  margin: 0; padding: 40px 16px;
+  font: 15px/1.5 "Segoe UI", Roboto, Arial, sans-serif;
+  color: #17262b; background-color: #eef3f2; text-align: center;
+}
+h1 {
+  max-width: 720px; margin: 0 auto 24px;
+  font: 700 30px/1.2 Georgia, serif; color: #0f5e5a; text-align: left;
+}
+form {                               /* kartu form, centering dengan auto margin */
+  max-width: 720px; margin: 0 auto; text-align: left; overflow: hidden;
+  background-color: #fff; border: 1px solid #d5dfdd; border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 94, 90, 0.12);
+}
+table {
+  width: 100% !important; border: none !important;
+  border-collapse: collapse !important; border-spacing: 0;
+}
+td {
+  padding: 14px 22px; border: none; border-bottom: 1px solid #d5dfdd;
+  vertical-align: middle; background-color: #fff;
+}
+tr:nth-child(even) td { background-color: #f6faf9; }
+tr > td:first-child { width: 34%; }
+tr:last-child > td { width: auto; border-bottom: none; background-color: #eef3f2; }
+td:first-child label { display: block; }
+
+input[type="text"], select, textarea {
+  box-sizing: border-box; width: 100%; padding: 10px 14px;
+  font: inherit; border: 1px solid #b9c8c6; border-radius: 8px;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none; border-color: #0f5e5a; box-shadow: 0 0 0 3px rgba(15, 94, 90, 0.2);
+}
+textarea { min-height: 130px; resize: vertical; }
+
+input[type="radio"], input[type="checkbox"] { accent-color: #0f5e5a; margin-right: 4px; }
+td p, td P { margin: 0 0 6px; }
+td:last-child label { margin-right: 14px; }
+
+input[type="submit"] {
+  padding: 12px 36px; font: 700 16px "Segoe UI", Arial, sans-serif;
+  color: #fff; background-color: #0f5e5a; border: none; border-radius: 999px;
+  box-shadow: 0 4px 0 #f2a900; cursor: pointer;
+}
+input[type="submit"]:hover { background-color: #0b4a47; }
+
+@media (max-width: 600px) {          /* tampilan HP */
+  table, tbody, tr, td { display: block; width: 100% !important; box-sizing: border-box; }
+}
